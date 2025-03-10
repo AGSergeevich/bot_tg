@@ -1,0 +1,147 @@
+2025-03-10 00:40:14,466 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 00:40:14,713 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
+2025-03-10 00:40:28,271 - aiogram.event - INFO - Update id=595492767 is not handled. Duration 0 ms by bot id=7884607985
+2025-03-10 00:40:28,272 - aiogram.event - ERROR - Cause exception while process update id=595492767 by bot id=7884607985
+TypeError: cmd_start() got an unexpected keyword argument 'dispatcher'
+Traceback (most recent call last):
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Артем\Desktop\учеба\riwbn.py", line 109, in wrapper
+    return await func(message, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cmd_start() got an unexpected keyword argument 'dispatcher'
+2025-03-10 00:46:35,046 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 00:46:35,058 - aiogram.dispatcher - INFO - Polling stopped
+2025-03-10 00:48:16,702 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 00:48:16,702 - aiogram.dispatcher - INFO - Polling stopped
+2025-03-10 00:50:33,201 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 00:50:33,415 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
+2025-03-10 00:50:46,540 - aiogram.event - INFO - Update id=595492768 is handled. Duration 265 ms by bot id=7884607985
+2025-03-10 00:51:03,332 - aiogram.event - INFO - Update id=595492769 is handled. Duration 12718 ms by bot id=7884607985
+2025-03-10 00:51:20,497 - aiogram.event - INFO - Update id=595492770 is handled. Duration 188 ms by bot id=7884607985
+2025-03-10 00:51:44,741 - aiogram.event - INFO - Update id=595492771 is handled. Duration 217 ms by bot id=7884607985
+2025-03-10 00:52:40,642 - aiogram.event - INFO - Update id=595492772 is handled. Duration 188 ms by bot id=7884607985
+2025-03-10 00:54:18,962 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 00:54:19,163 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
+2025-03-10 00:54:44,898 - aiogram.event - INFO - Update id=595492773 is handled. Duration 12063 ms by bot id=7884607985
+2025-03-10 00:54:50,232 - aiogram.event - INFO - Update id=595492774 is handled. Duration 77 ms by bot id=7884607985
+2025-03-10 00:57:15,143 - aiogram.event - INFO - Update id=595492775 is handled. Duration 188 ms by bot id=7884607985
+2025-03-10 00:57:18,063 - aiogram.event - INFO - Update id=595492776 is handled. Duration 61 ms by bot id=7884607985
+2025-03-10 01:00:57,916 - aiogram.event - INFO - Update id=595492777 is handled. Duration 266 ms by bot id=7884607985
+2025-03-10 01:02:29,158 - aiogram.event - INFO - Update id=595492778 is handled. Duration 187 ms by bot id=7884607985
+2025-03-10 01:04:10,847 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 01:04:11,067 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
+2025-03-10 01:04:22,142 - aiogram.event - INFO - Update id=595492779 is handled. Duration 250 ms by bot id=7884607985
+2025-03-10 01:07:50,950 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 01:07:51,135 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
+2025-03-10 01:08:01,006 - aiogram.event - INFO - Update id=595492780 is not handled. Duration 16 ms by bot id=7884607985
+2025-03-10 01:08:07,470 - aiogram.event - INFO - Update id=595492781 is handled. Duration 202 ms by bot id=7884607985
+2025-03-10 01:08:20,099 - aiogram.event - INFO - Update id=595492782 is handled. Duration 9422 ms by bot id=7884607985
+2025-03-10 01:08:22,347 - aiogram.event - INFO - Update id=595492783 is handled. Duration 156 ms by bot id=7884607985
+2025-03-10 01:08:38,701 - aiogram.event - INFO - Update id=595492784 is handled. Duration 171 ms by bot id=7884607985
+2025-03-10 01:08:40,711 - aiogram.event - INFO - Update id=595492785 is handled. Duration 77 ms by bot id=7884607985
+2025-03-10 01:08:42,038 - aiogram.event - INFO - Update id=595492786 is handled. Duration 78 ms by bot id=7884607985
+2025-03-10 01:08:57,656 - aiogram.event - INFO - Update id=595492787 is handled. Duration 12312 ms by bot id=7884607985
+2025-03-10 01:11:45,683 - aiogram.event - INFO - Update id=595492788 is handled. Duration 202 ms by bot id=7884607985
+2025-03-10 01:14:05,588 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 01:14:05,786 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
+2025-03-10 01:14:26,344 - aiogram.event - INFO - Update id=595492789 is handled. Duration 10282 ms by bot id=7884607985
+2025-03-10 01:14:37,483 - aiogram.event - INFO - Update id=595492790 is handled. Duration 77 ms by bot id=7884607985
+2025-03-10 01:23:36,000 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 01:23:36,212 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
+2025-03-10 01:23:58,456 - aiogram.event - INFO - Update id=595492791 is handled. Duration 11202 ms by bot id=7884607985
+2025-03-10 01:24:02,134 - aiogram.event - INFO - Update id=595492792 is handled. Duration 79 ms by bot id=7884607985
+2025-03-10 01:27:57,436 - aiogram.event - INFO - Update id=595492793 is not handled. Duration 16 ms by bot id=7884607985
+2025-03-10 01:31:41,985 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 01:31:42,177 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
+2025-03-10 01:32:02,572 - aiogram.event - INFO - Update id=595492794 is handled. Duration 13641 ms by bot id=7884607985
+2025-03-10 01:32:04,964 - aiogram.event - INFO - Update id=595492795 is handled. Duration 202 ms by bot id=7884607985
+2025-03-10 01:32:49,958 - aiogram.event - INFO - Update id=595492796 is handled. Duration 202 ms by bot id=7884607985
+2025-03-10 01:35:36,659 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 01:35:36,868 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
+2025-03-10 01:35:37,136 - __main__ - ERROR - Ошибка проверки прав: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+2025-03-10 01:35:37,177 - aiogram.event - INFO - Update id=595492797 is handled. Duration 202 ms by bot id=7884607985
+2025-03-10 01:36:02,433 - aiogram.event - INFO - Update id=595492798 is handled. Duration 13311 ms by bot id=7884607985
+2025-03-10 01:36:12,664 - aiogram.event - INFO - Update id=595492799 is handled. Duration 188 ms by bot id=7884607985
+2025-03-10 01:41:54,272 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 01:41:54,470 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
+2025-03-10 01:42:04,356 - aiogram.event - INFO - Update id=595492800 is handled. Duration 1968 ms by bot id=7884607985
+2025-03-10 01:42:08,335 - aiogram.event - INFO - Update id=595492801 is handled. Duration 109 ms by bot id=7884607985
+2025-03-10 01:42:14,022 - aiogram.event - INFO - Update id=595492802 is handled. Duration 94 ms by bot id=7884607985
+2025-03-10 01:42:25,444 - aiogram.event - INFO - Update id=595492803 is handled. Duration 141 ms by bot id=7884607985
+2025-03-10 01:42:29,399 - aiogram.event - INFO - Update id=595492804 is handled. Duration 156 ms by bot id=7884607985
+2025-03-10 01:42:38,344 - aiogram.event - INFO - Update id=595492805 is handled. Duration 77 ms by bot id=7884607985
+2025-03-10 01:42:55,869 - aiogram.event - INFO - Update id=595492806 is handled. Duration 13983 ms by bot id=7884607985
+2025-03-10 01:42:57,634 - aiogram.event - INFO - Update id=595492807 is handled. Duration 109 ms by bot id=7884607985
+2025-03-10 01:43:18,580 - aiogram.event - INFO - Update id=595492808 is handled. Duration 218 ms by bot id=7884607985
+2025-03-10 01:43:18,897 - aiogram.event - INFO - Update id=595492809 is handled. Duration 125 ms by bot id=7884607985
+2025-03-10 01:43:19,066 - aiogram.event - INFO - Update id=595492810 is handled. Duration 125 ms by bot id=7884607985
+2025-03-10 01:43:22,319 - aiogram.event - INFO - Update id=595492811 is handled. Duration 171 ms by bot id=7884607985
+2025-03-10 01:43:22,631 - aiogram.event - INFO - Update id=595492812 is handled. Duration 172 ms by bot id=7884607985
+2025-03-10 01:43:25,988 - aiogram.event - INFO - Update id=595492813 is handled. Duration 125 ms by bot id=7884607985
+2025-03-10 01:43:34,638 - aiogram.event - INFO - Update id=595492814 is handled. Duration 78 ms by bot id=7884607985
+2025-03-10 01:43:52,962 - aiogram.event - INFO - Update id=595492815 is handled. Duration 11032 ms by bot id=7884607985
+2025-03-10 01:44:05,182 - aiogram.event - INFO - Update id=595492816 is handled. Duration 8405 ms by bot id=7884607985
+2025-03-10 01:44:14,650 - aiogram.event - INFO - Update id=595492817 is handled. Duration 108 ms by bot id=7884607985
+2025-03-10 01:44:41,529 - aiogram.event - INFO - Update id=595492818 is handled. Duration 266 ms by bot id=7884607985
+2025-03-10 01:44:59,986 - aiogram.event - INFO - Update id=595492819 is handled. Duration 297 ms by bot id=7884607985
+2025-03-10 01:45:00,272 - aiogram.event - INFO - Update id=595492820 is handled. Duration 62 ms by bot id=7884607985
+2025-03-10 01:51:12,577 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 01:51:12,791 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
+2025-03-10 01:51:37,687 - aiogram.event - INFO - Update id=595492821 is handled. Duration 266 ms by bot id=7884607985
+2025-03-10 01:51:52,627 - aiogram.event - INFO - Update id=595492822 is handled. Duration 10250 ms by bot id=7884607985
+2025-03-10 01:51:53,624 - __main__ - INFO - Обработка callback: publish
+2025-03-10 01:51:53,835 - aiogram.event - INFO - Update id=595492823 is handled. Duration 202 ms by bot id=7884607985
+2025-03-10 01:57:22,983 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 01:57:23,157 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
+2025-03-10 01:57:28,036 - aiogram.event - INFO - Update id=595492824 is handled. Duration 219 ms by bot id=7884607985
+2025-03-10 01:57:31,486 - aiogram.event - INFO - Update id=595492825 is handled. Duration 233 ms by bot id=7884607985
+2025-03-10 01:57:51,387 - aiogram.event - INFO - Update id=595492826 is handled. Duration 15531 ms by bot id=7884607985
+2025-03-10 01:57:53,119 - __main__ - INFO - Начало обработки callback: publish
+2025-03-10 01:57:53,291 - __main__ - INFO - Права бота: status='administrator' user=User(id=7884607985, is_bot=True, first_name='taro', last_name=None, username='vpntestddd_bot', language_code=None, is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None, can_connect_to_business=None, has_main_web_app=None) can_be_edited=False is_anonymous=False can_manage_chat=True can_delete_messages=True can_manage_video_chats=True can_restrict_members=True can_promote_members=False can_change_info=True can_invite_users=True can_post_stories=True can_edit_stories=True can_delete_stories=True can_post_messages=True can_edit_messages=True can_pin_messages=None can_manage_topics=None custom_title=None can_manage_voice_chats=True
+2025-03-10 01:57:53,699 - aiogram.event - INFO - Update id=595492827 is handled. Duration 577 ms by bot id=7884607985
+2025-03-10 01:58:52,385 - aiogram.event - INFO - Update id=595492828 is handled. Duration 10219 ms by bot id=7884607985
+2025-03-10 01:58:58,632 - __main__ - INFO - Начало обработки callback: publish
+2025-03-10 01:58:58,792 - __main__ - INFO - Права бота: status='administrator' user=User(id=7884607985, is_bot=True, first_name='taro', last_name=None, username='vpntestddd_bot', language_code=None, is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None, can_connect_to_business=None, has_main_web_app=None) can_be_edited=False is_anonymous=False can_manage_chat=True can_delete_messages=True can_manage_video_chats=True can_restrict_members=True can_promote_members=False can_change_info=True can_invite_users=True can_post_stories=True can_edit_stories=True can_delete_stories=True can_post_messages=True can_edit_messages=True can_pin_messages=None can_manage_topics=None custom_title=None can_manage_voice_chats=True
+2025-03-10 01:58:58,960 - __main__ - INFO - Пост опубликован: Уход за кожей зимой: необходимые продукты и рекомендации
+\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\...
+2025-03-10 01:58:58,960 - aiogram.event - INFO - Update id=595492829 is handled. Duration 327 ms by bot id=7884607985
+2025-03-10 02:02:19,625 - aiogram.dispatcher - INFO - Start polling
+2025-03-10 02:02:19,807 - aiogram.dispatcher - INFO - Run polling for bot @vpntestddd_bot id=7884607985 - 'taro'
